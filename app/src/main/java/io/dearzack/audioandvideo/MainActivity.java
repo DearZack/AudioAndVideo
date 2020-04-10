@@ -13,7 +13,11 @@ import java.util.List;
 
 import io.dearzack.audioandvideo.adapter.MainAdapter;
 import io.dearzack.audioandvideo.bean.NextActivity;
+import io.dearzack.audioandvideo.task001.Task001DrawPictureActivity;
 
+/**
+ * 任务列表https://blog.51cto.com/ticktick/1956269
+ */
 public class MainActivity extends AppCompatActivity implements MainAdapter.OnClick {
 
     private RecyclerView recyclerView;
@@ -33,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements MainAdapter.OnCli
 
     private void initData() {
         data = new ArrayList<>();
-        data.add(new NextActivity("1", MainActivity.class));
+        data.add(new NextActivity("图片", Task001DrawPictureActivity.class));
     }
 
     @Override
